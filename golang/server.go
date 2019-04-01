@@ -21,7 +21,7 @@ func buildRouter() http.Handler {
 		wrt.Write([]byte("welcome"))
 	})
 	router.Get("/", func(wrt http.ResponseWriter, rd *http.Request) {
-		wrt.Write([]byte("first page"))
+		wrt.Write([]byte("second page"))
 	})
 	return router
 }
